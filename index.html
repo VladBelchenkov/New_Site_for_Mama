@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat">
+
+    <title> Psybel </title>
+    <link rel="icon" href="Images/book-half.svg">
+</head>
+
+<body>
+    <a href="#" id="button">
+        <i class="bi bi-arrow-up-circle-fill h1"></i>
+    </a>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 reveal-once">
+        <div class="container">
+            <!-- <a href="#" class="navbar-brand"> </a> -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">Обо мне</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cases" class="nav-link">Кейсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sign-up" class="nav-link">Записаться</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#article" class="nav-link">Статьи</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/belcencovatat/" target="_blank"> <img
+                                src="images/icons8-instagram.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://t.me/believename" target="_blank"> <img src="images/icons8-telegram-app.svg"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+
+    <section class="bg-light text-dark p-5 pt-lg-5 reveal-always" id="showcase">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <div class="text-end">
+                    <h1><span class="text-warning">Психолог <br> Татьяна Бельченкова</span></h1>
+                    <blockquote class="blockquote">
+                        Разобраться в своей жизни, расставить все по местам, освободиться и идти
+                        вперед
+                    </blockquote>
+                    <p class="my-4">
+                        Рассказывая свою историю, вы освобождаете место для себя. Ваше место в вашей жизни занято
+                        сложным и утомительным опытом, через который вам пришлось пройти.
+                        Жизнь предлагает очень много смыслов и красоты, которую вы обязательно увидите, освободившись от
+                        навязанных убеждений и обстоятельств, которые тянут вас назад.<br>
+                        Выбрать себя, расти и развиваться — это я предлагаю сделать главным в вашей жизни.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-sm-block p-4" src="images/Фото/Main.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5 reveal-always" id="boxes">
+        <div class="container">
+            <div class="row row-cols-2 text-center g-4">
+                <div class="col">
+                    <div class="card bg-secondary navbar-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Индивидуальная консультация
+                            </h3>
+                            <p class="card-text"> Мы совместно изучим вашу историю, чтобы лучше узнать о ваших чувствах
+                                и моделях отношения к себе и к другим. Непредвзятое пространство без оценивания и
+                                осуждения. <br> </p>
+                            <button type="button" class="btn btn-primary"
+                                onclick=" $('#services-carousel').carousel(0);"><a href="#services"
+                                    class="pb-5">Подробнее
+                                    -></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <h3 class="card-title mb-2">
+                                Лайф-сессия
+                            </h3>
+                            <p class="card-text">
+                                В этом формате встречи мы исследуем вопрос (проблему) со всех сторон. Выход есть всегда.
+                                Моя задача показать вам этот выход и возможно, даже не один.
+                            </p>
+                            <button type="button" class="btn btn-primary"
+                                onclick=" $('#services-carousel').carousel(1);"><a href="#services"
+                                    class="p-2">Подробнее
+                                    -></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-light navbar-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-balloon-heart"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Курс "Самооценка"
+                            </h3>
+                            <p class="card-text">
+                                Что мешает качественному проживанию жизни? Причина этому - низкая самооценка. Собрать по
+                                кирпичикам новую самооценку-это возможно за 1 месяц.
+                            </p>
+                            <button type="button" class="btn btn-primary"
+                                onclick=" $('#services-carousel').carousel(2);"><a href="#services"
+                                    class="p-2">Подробнее
+                                    -></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-postage-heart"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                МАК-карты
+                            </h3>
+                            <p class="card-text">
+                                Инструмент метафорических картинок позволяет вам достать всю информацию из подсознания.
+                                Как известно, все ответы у вас уже есть, надо только их увидеть.
+                            </p>
+                            <button type="button" class="btn btn-primary"
+                                onclick=" $('#services-carousel').carousel(3);"><a href="#services"
+                                    class="p-2">Подробнее
+                                    -></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me -->
+
+    <section class="bg-dark text-light p-5 pt-lg-5 textstart reveal-always" id="about-me">
+        <div class="container">
+
+            <div class="row row-cols-2 p-1">
+                <div class="col">
+                    <img class="img-fluid d-sm-block" src="images/Фото/photo_2022-12-05_12-55-50.jpg" alt="">
+                </div>
+                <div class="col">
+                    <div>
+                        <h2 class="mb-4"> С какими запросами я работаю</h2>
+                        <div class="accordion accordion-flush" id="questions">
+                            <!-- item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#question-one">
+                                        <p>Личностные взаимоотношения и коммуникация в них</p>
+                                    </button>
+                                </h2>
+                                <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>С партнером</li>
+                                            <li>На работе с коллегами и начальством</li>
+                                            <li>С родителями и семьей</li>
+                                            <li>С друзьями</li>
+                                        </ul>
+                                        <p>
+                                            Пример: У меня был клиент, у которого были на работе с коллегами
+                                            напряженные отношения. На работу он ходить не хотел, а нужно было. Что он
+                                            делал, причем неосознанно: он работал в плохом настроении, работу свою
+                                            выполнял плохо и был в шаге от увольнения.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#question-two">
+                                        <p>Улучшение самооценки</p>
+                                    </button>
+                                </h2>
+                                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li> Вы ждете чужого одобрения </li>
+                                            <li> У вас нет своего мнения, либо оно есть, но отстоять вы его не можете
+                                            </li>
+                                            <li> Вы не довольны собой во всем - вес, внешность, то что говорите и
+                                                делаете </li>
+                                            <li> Занимаетесь самобичеванием и самокопанием </li>
+                                        </ul>
+                                        <p>
+                                            Пример: девушка, учится в институте на первом курсе, не может начать
+                                            общаться
+                                            первая, стоит в тени компании, боится слова сказать, думает, что все сразу
+                                            подумают, что она не интересная и чушь несет. Ей все время хочется
+                                            спрятаться,
+                                            быть невидимой, но общества своих однокурсников она очень желает.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#question-three">
+                                        <p>Потеря мотивации и воли к жизни</p>
+                                    </button>
+                                </h2>
+                                <div id="question-three" class="accordion-collapse collapse"
+                                    data-bs-parent="#questions">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li> Жизнь превратилась в день сурка </li>
+                                            <li> Вы боитесь что-то менять </li>
+                                            <li> Страдаете от завистливых мыслей </li>
+                                            <li> Не верите в собственные силы </li>
+                                            <li> Отвергаете и упускаете возможности </li>
+                                        </ul>
+                                        <p>
+                                            Пример: На работе все надоело, вокруг не интересные люди, порой не очень
+                                            честные коллеги и токсичный начальник. А хочется работать в такой команде,
+                                            чтобы
+                                            все делали общее дело и каждый вносил свой вклад в достижение результата.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#question-four">
+                                        <p>Сепарация от родителей</p>
+                                    </button>
+                                </h2>
+                                <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li> Ваши родители лезут в вашу жизнь </li>
+                                            <li> Вы зависите от родителей материально </li>
+                                            <li> Вы не можете самостоятельно принимать решения </li>
+                                            <li> Скрываете, лжете родителям, что бы не испытывать их недовольство и
+                                                прочее </li>
+                                        </ul>
+                                        <p>
+                                            Пример: я не хочу звонить своим родителям, хотя понимаю что должна. Они
+                                            хотят
+                                            слышать только о моих успехах. Я должна подтверждать их мнение обо мне, что
+                                            я
+                                            хорошая девочка, умничка и отличница, успешная и замечательная. Чаще всего
+                                            общение с ними очень фальшивое и мне это очень не приятно.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#question-five">
+                                        <p>Созависимые отношения</p>
+                                    </button>
+                                </h2>
+                                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li> Вы эмоционально и/или финансово зависите от партнера </li>
+                                            <li> С партнером плохо и без него невыносимо </li>
+                                            <li> Для вас отношения это самое главное в жизни </li>
+                                            <li> Вас обижают </li>
+                                            <li> Вы обижаете </li>
+                                            <li> Вы верите, что причина сложностей в вас </li>
+                                        </ul>
+                                        <p>
+                                            Пример: Вы думаете, что нужно исправиться, что еще чуть-чуть и он станет
+                                            относится к вам, как раньше. Вы вините себя, что это вы все испортили,
+                                            что-то недоделали, надо еще больше стараться.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- services -->
+    <section class="text-center text-md-start reveal-always" id="services">
+        <div class="container">
+            <div id="services-carousel" class="carousel slide carousel-dark" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#services-carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#services-carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#services-carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#services-carousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="text-center mb-4"> <br>Индивидуальная консультация</h2>
+                        <p class="lead text-center">Моя задача создать непредвзятое пространство, где нет осуждения и
+                            оценивания. Мы с любопытством изучим вашу историю, чтобы лучше узнать о ваших чувствах и
+                            моделях отношения к себе и к другим. </p>
+                        <ul>
+                            <li>Проходит офлайн если вы в москве и хотите встретиться лично</li>
+                            <li>Проходит онлайн в любой точке мира </li>
+                            <li>Продолжительность 55 минут</li>
+                            <li>Стоимость 2500р</li>
+                        </ul>
+                        <div class="text-center pb-4"><button type="button" class="btn btn-primary "><a href=""
+                                    class="p-2">Записаться -></a></button></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-4"> <br>Лайф-сессия</h2>
+                        <p class="lead text-center">В этом формате встречи мы исследуем вопрос (проблему) со всех
+                            сторон. Выход есть всегда. Моя задача показать вам этот выход и возможно, даже не один. Даже
+                            если итог встречи будет казаться вам фантастическим и невероятным, я укреплю вас в мысли,
+                            что человек может все, даже самое невероятное. </p>
+                        <ul>
+                            <li>Проходит офлайн если вы в москве и хотите встретиться лично</li>
+                            <li>Проходит онлайн в любой точке мира </li>
+                            <li>Продолжительность «пока не придем к результату»</li>
+                            <li>Присутствуют элементы коучинга </li>
+                            <li>Стоимость 2500 р за каждые 60 минут </li>
+                        </ul>
+                        <div class="text-center pb-4"><button type="button" class="btn btn-primary "><a href=""
+                                    class="p-2">Записаться -></a></button></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-4"> <br>Курс Самооценка</h2>
+                        <p class="lead text-center">Качество жизни и развития личности на прямую зависит от самооценки.
+                            Она формируется в раннем детстве и юности. Во взрослом возрасте, мы имеем то, что не
+                            дотягивает, а порой и очень мешает качественному проживанию жизни. <br>
+                            Хорошая новость - самооценку можно поднять или даже сформировать заново, и поможет вам в
+                            этом
+                            мой курс – «Самооценка».
+                        </p>
+                        <ul>
+                            <li>Проходит онлайн в любой точке мира</li>
+                            <li>Время прохождения расчитано на 1 месяц </li>
+                            <li>Информация разбита на 12 блоков</li>
+                            <li>Упражнения и задания</li>
+                            <li>Чат со мной</li>
+                            <li>4 встречи по 55 минут </li>
+                            <li>Стоимость 12800р за весь курс</li>
+                        </ul>
+                        <p class="fs-6">* все материалы остаются у вас навсегда</p>
+                        <div class="text-center pb-4"><button type="button" class="btn btn-primary "><a href=""
+                                    class="p-2">Узнать дополнительную информацию -></a></button></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-4"> <br>Консультация с использованием МАК-карт</h2>
+                        <p class="lead text-center">Инструмент метафорических картинок позволяет вам достать всю
+                            информацию из подсознания. Как известно, все ответы у вас уже есть, надо только их увидеть.
+                            Это не гипноз и не ворожба. Это сертифицированный метод, который мягко выводит вас на полное
+                            видение ситуации и вывода из нее. Я нахожусь с вами в роли проводника в глубину вашей души и
+                            психики. </p>
+                        <ul>
+                            <li>Проходит при личной встрече</li>
+                            <li>Стоимость 2500 за 55 минут</li>
+                        </ul>
+                        <div class="text-center pb-4"><button type="button" class="btn btn-primary "><a href=""
+                                    class="p-2">Записаться -></a></button></div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#services-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#services-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal-always bg-dark text-light" id="cases">
+        <div class="container pb-5">
+            <h2 class="text-center mb-4"> <br>Кейсы</h2>
+            <div id="cases-carousel" class="carousel slide carousel-dark" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cases-carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#cases-carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item  pb-4">
+                        <p class="h3 text-center">Александр, управляющий небольшой химчисткой</p>
+                        <p>
+                            Запрос :<br> Научиться контролировать свой гнев, который выливается в агрессивное общение с
+                            подчиненными.<br>
+                            «..Я часто срываюсь, кричу на сотрудников за любой проступок, за любую ошибку в работе. Люди
+                            не выдерживают и увольняются. Уходят лучшие кадры, появилась текучка. Это еще больше выводит
+                            из себя. Я чувствую бессилие от своего гнева.»<br>
+                            Александр чувствовал бессилие и раздражение, страх потерять работу и уважение людей.
+                        <p>
+                            С чем мы работали :
+                        </p>
+                        <ul>
+                            <li> Перфекционизм (сам не ошибаюсь и другим нельзя) </li>
+                            <li> Страх и не разрешение себе ошибаться </li>
+                            <li> Обратная связь - учились давать ее конструктивно и без оценочно </li>
+                            <li> Разбирались, чью модель общения проявляет. Да, копались в детстве </li>
+                        </ul>
+                        <p>
+                            Результат :</p>
+                        <ul>
+                            <li> Научился принимать ошибки других людей </li>
+                            <li> Научился давать обратную связь не унижая достоинства других людей </li>
+                            <li> Занялся спортом, что бы выплескивать энергию и негатив. Спорт дал и положительный
+                                заряд </li>
+                            <li> Коллектив восстановился, вернулось несколько старых сотрудников </li>
+                        </ul>
+                        <p>
+                            Итог :
+                        </p>
+                        <p>
+                            Человек потратил 4 часа, 10 тыс рублей, сохранил работу и немаленький оклад, перестал быть
+                            ужасным начальником, сохранил уважение коллег, стал заниматься спортом, научился видеть в
+                            проблеме задачу.<br>
+                            Самое главное! Он удовлетворяет свою потребность быть значимым, уважаемым, востребованным и
+                            не чувствует при этом вину и стыд.
+                        </p>
+                    </div>
+                    <div class="carousel-item  active pb-4">
+                        <p class="h3 text-center"> Екатерина, 18 лет, студентка первокурсница</p>
+                        <p>
+                            Запрос : <br>
+                            Отделиться от мамы. Научиться говорить ей «нет». Быть дисциплинированной. <br>
+                            «..Моя мама постоянно звонит мне, контролирует все мои действия, я должна отчитываться, что
+                            я ем, с кем общаюсь. Самое сложное, что она рассказывает мне, как они ссорятся с папой, как
+                            ей плохо без меня и тяжело. Я чувствую, что мне жалко их и я не могу сосредоточиться и
+                            учиться. У меня нет сил, я не хочу чувствовать эмоции»
+                        </p>
+                        <p>
+                            С чем мы работали :
+                        </p>
+                        <ul>
+                            <li>С выстраиванием личных границ </li>
+                            <li>С эмоциями Кати</li>
+                            <li>С разграничением ответственности</li>
+                            <li>С чувством вины</li>
+                            <li>С обидами</li>
+                            <li>С синдромом «хорошей девочки»</li>
+                            <li>Упражнялись в правильных ответах и возражениях</li>
+                        </ul>
+                        <p>
+                            Результат :
+                        </p>
+                        <ul>
+                            <li>Катя научилась контролировать свои эмоции и не вовлекаться в мамин процесс</li>
+                            <li>Поняла, что ответственность за мамину жизнь она не несет</li>
+                            <li>Катя смогла сказать маме, что она мешает ей учиться и быть самостоятельной</li>
+                        </ul>
+                        <p>
+                            Итог :
+                        </p>
+                        <ul>
+                            <li>Девушка смогла сдать сессию и остаться учиться на бюджете</li>
+                            <li>Научилась отстаивать свою позицию</li>
+                            <li>Теперь она умеет контролировать свои эмоции и выражать их экологично
+                                И многое, многое другое…</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#cases-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cases-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+            </div>
+            <p class="text-left text-muted">
+                *Имена изменены <br>
+                *Кейсы и отзывы реальные <br>
+                *Отзывы опубликованы с согласия клиента <br>
+            </p>
+    </section>
+
+    <!-- Contact me -->
+
+    <section class="bg-light text-dark p-5 pt-lg-5 text-center text-md-start reveal-always" id="sign-up">
+        <div class="container text-center">
+            <h2 class="mb-4">Ваше здоровье начинается здесь </h2>
+            <form method="post" name="email-form" action="PHP/email.php">
+                <div class="row row-cols-sm-1 row-cols-lg-2 p-1">
+                    <div class="col p-1">
+                        <input type="text" class="form-control" id="Name" required placeholder="Как вас зовут?*">
+                    </div>
+                    <div class="col p-1">
+                        <input type="tel" class="form-control" id="telephone" required
+                            placeholder="Контактный номер телефона*">
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col p-1">
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required
+                            placeholder="Электронная почта*">
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col p-1">
+                        <input type="text" class="form-control" id="InputMessage" aria-describedby="message"
+                            placeholder="Ваши комментарии">
+                    </div>
+                </div>
+                <div class="row p-1 text-start">
+                    <div class="col p-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Индивидуальная консультация
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Лайф-сессия
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col p-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Курс Самооценка
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Консультация с использованием МАК-карт
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col p-1">
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </div>
+            </form>
+    </section>
+    <!-- articles -->
+
+    <section class="bg-light text-dark p-5 pt-lg-5 text-center text-md-start reveal-always" id="article">
+        <div class="container text-center">
+            <h2 class="text-center mb-4"> <br>ЧИТАТЬ СТАТЬИ</h2>
+            <div class="row row-cols-1 p-1">
+                <div class="col p-1">
+                    <div class="card align-items-center">
+                        <div class="pt-3"><img class="img-fluid d-sm-block"
+                                src="images/Фото/photo_2023-04-03_12-46-13.jpg" width="400" height="300"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Найти и обезвредить. Предатель в твоей голове</h5>
+                            <p class="text-start ps-lg-4 ps-3"> Стабильная самооценка - это уверенность в себе и
+                                ощущение «я ок» вне зависимости от взлетов и падений.
+                                После прочтения этой статьи вы узнаете, кто первый стоит на пути к вашей уверенности. В
+                                самом конце есть упражнение, которое вы можете выполнить самостоятельно...</p>
+                            <a href="HTML/naiti&obezvredit.html">Читать полностью..</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col p-1">
+                    <div class="card align-items-center">
+                        <div class="pt-3"><img class="img-fluid d-sm-block" src="images/Group-285-1.webp" width="300"
+                                height="258"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Джокер</h5>
+                            <p class="text-start ps-lg-4 ps-3"> Итак, даю обещанный своим читателям в инстаграмме разбор
+                                по фильму
+                                «Джокер». Важно! До
+                                того, как прочесть этот текст, рекомендую посмотреть сам фильм, он действительно того
+                                стоит. Прежде всего, потому, что каждый из нас может найти в том, что показали его
+                                создатели, что-то про себя и свою жизнь. Итак, первые образы фильма, именно они
+                                определяют весь… </p>
+                            <a href="HTML/dzoker.html">Читать полностью..</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+                <!-- <div class="text-center pb-4"><button type="button" class="btn btn-primary "><a href="HTML/stati.html"
+                        class="p-2 text-white">Больше статей</a></button></div> -->
+            </div>
+    </section>
+
+
+    <section class="bg-light text-dark text-center text-md-start reveal-always" id="contacts">
+        <div class="container text-center">
+            <div class="row pb-3 pt-5">
+                <div class="col">
+                    <h2 class="mb-4">Мои контакты:</h2>
+                </div>
+            </div>
+            <div class="row row-cols-3">
+                <div class="col border p-2 instagram-border">
+                    <p>Instagram: <br> <a href="https://www.instagram.com/belcencovatat/" target="_blank">
+                            @belcencovatat </a> <br> </p>
+                </div>
+                <div class="col border p-2 email-border">
+                    <p>Email: <br> <a href="mailto:t.belchencova@gmail.com" target="_blank"> t.belchencova@gmail.com
+                        </a></p>
+                </div>
+                <div class="col border p-2 telegram-border">
+                    <p>Telegram: <br> <a href="https://t.me/believename" target="_blank">@believename</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white position-relative reveal-always">
+        <div class="container">
+            <p class="lead text-center">Copyright &copy; 2022 Mama site</p> <br> <a href="" target="_blank">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script>
+        ScrollReveal().reveal('.reveal-always', { origin: 'top', reset: true, duration: 1500 })
+        ScrollReveal().reveal('.reveal-once', { origin: 'top', reset: false, duration: 1500 }) 
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Questions -->
+<!-- <section class="p-2 pb-5 pt-lg-2 bg-dark text-light text-center text-md-start reveal-always" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4"> <br>Часто задаваемые вопросы</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
